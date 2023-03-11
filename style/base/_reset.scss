@@ -33,6 +33,7 @@ img{
 a{
     text-decoration: none !important;
     cursor: pointer;
+    color: $secondColor !important;
 }
 
 i{
@@ -51,6 +52,22 @@ ul{
 
 li{
     display: inline-block;
+}
+
+// Tools Form
+
+label{
+    
+}
+
+input{
+    border: 1px solid $colorBorderInput;
+    padding: 8px 20px;
+    border-radius: 2px;
+}
+
+.fix-icon-Input{
+    @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
 }
 
 // Style Scroll Site
@@ -125,4 +142,25 @@ button{
     -webkit-tap-highlight-color: transparent;
     position: relative;
     direction: ltr;
+}
+
+.text-overflow{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 170px;
+    overflow: hidden;
+}
+
+// Fonts Sizs
+
+.small-font-10{
+    font-size: 10px;
+}
+
+.small-font-11{
+    font-size: 11px;
+}
+
+.small-font-12{
+    font-size: 12px;
 }

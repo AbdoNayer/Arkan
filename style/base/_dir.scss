@@ -9,6 +9,10 @@ html[dir=ltr] {
         direction: ltr;
     }
 
+    .fix-icon-Input{
+        right: 20px;
+    }
+
 }
 
 // Dir RTL
@@ -18,6 +22,10 @@ html[dir=rtl] {
     // Body App
     body{
         direction: rtl;
+    }
+
+    .fix-icon-Input{
+        left: 20px;
     }
 
 }
