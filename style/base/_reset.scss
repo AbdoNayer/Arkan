@@ -1,0 +1,128 @@
+// Font Import Cdn
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+// Mixin
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+// Local Style Page
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+a, button, input, textarea, i{
+    @include transition(0.5s);
+}
+
+img{
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+i{
+    vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 10px 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    display: inline-block;
+}
+
+// Style Scroll Site
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+// Colors
+
+.colorMain{
+    color: $mainColor !important;
+}
+
+.secondColor{
+    color: $secondColor !important;
+}
+
+// Bg Colors
+
+.bgColorMain{
+    background-color: $mainColor !important;
+}
+
+.bgSecondColor{
+    background-color: $secondColor !important;
+}
+
+// Border Color
+
+.borderColorMain{
+    border: 1px solid $mainColor !important;
+}
+
+.borderSecondColor{
+    border: 1px solid $secondColor !important;
+}
+
+// Class Important
+
+button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+  
+.btn-button{
+    height: 45px;
+    width: 180px;
+    &:hover{
+      transform: scale(0.5);
+    }
+}
+
+.overlay{
+    @include positionItem(fixed, 0, initial, initial, 0, translateX(100%));
+    @include transition(0.3s);
+    height: 100%;
+    width: 100%;
+    z-index: 998;
+    background-color: rgba(0,0,0,0.6);              
+}
+
+.back{
+    transform: translate(0) !important;
+}
+
+.owl-carousel{
+    display: block;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    direction: ltr;
+}
