@@ -8,9 +8,28 @@ html[dir=ltr] {
     body{
         direction: ltr;
     }
-
     .fix-icon-Input{
         right: 20px;
+    }
+    .overlay-fixed{
+        transform: translateX(-100%);  
+        left: 0;            
+    }
+
+    // Count In
+    .count-in{
+        strong{
+            right: -4px;
+        }
+    }
+
+    // Media
+    @media (max-width: 990px) {
+        // Nav
+        nav{
+            transform: translateX(-100%);  
+            left: 0;
+        }
     }
 
 }
@@ -23,9 +42,28 @@ html[dir=rtl] {
     body{
         direction: rtl;
     }
-
     .fix-icon-Input{
         left: 20px;
+    }
+    .overlay-fixed{
+        transform: translateX(100%);  
+        right: 0;            
+    }
+
+    // Count In
+    .count-in{
+        strong{
+            left: -4px;
+        }
+    }
+
+    // Media
+    @media (max-width: 990px) {
+        // Nav
+        nav{
+            transform: translateX(100%);  
+            right: 0; 
+        }
     }
 
 }

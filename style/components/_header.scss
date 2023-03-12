@@ -1,0 +1,41 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+header{
+    .modal-country{
+        p{
+            &:nth-child(1){
+                span{
+                    color: #959595;
+                }
+            }
+        }
+    }
+    .dropdown-notification{
+        .dropdown-menu{
+            top: 14px !important;
+            border: 0;
+            padding: 0px;
+            transform: translate(-50%, 50px) !important;
+            left: 50% !important;
+            width: 300px;
+            li{
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+                span{
+                    color: #757575;
+                }
+                &:last-child{
+                    border-top: 1px solid #DDD;
+                }
+            }
+        }
+    }
+    .cart-title{
+        line-height: 17px;
+        font-size: 14px;
+    }
+}

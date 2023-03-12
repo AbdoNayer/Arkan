@@ -32,6 +32,7 @@ img{
 
 a{
     text-decoration: none !important;
+    display: inline-block;
     cursor: pointer;
     color: $secondColor !important;
 }
@@ -123,8 +124,8 @@ button{
     }
 }
 
-.overlay{
-    @include positionItem(fixed, 0, initial, initial, 0, translateX(100%));
+.overlay-fixed{
+    @include positionItem(fixed, 0, initial, initial, initial, initial);
     @include transition(0.3s);
     height: 100%;
     width: 100%;
@@ -132,8 +133,20 @@ button{
     background-color: rgba(0,0,0,0.6);              
 }
 
+.overlay-absolute{
+    @include positionItem(absolute, 0, initial, 0, initial, initial);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);              
+}
+
 .back{
     transform: translate(0) !important;
+}
+
+.showing{
+    opacity: 1 !important;
+    visibility: initial !important;
 }
 
 .owl-carousel{
@@ -151,6 +164,19 @@ button{
     overflow: hidden;
 }
 
+.main-body{
+    min-height: 600px;
+}
+
+.old-shadow{
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.height-view-scroll{
+    height: 500px;
+    overflow-y: auto;
+}
+
 // Fonts Sizs
 
 .small-font-10{
@@ -163,4 +189,8 @@ button{
 
 .small-font-12{
     font-size: 12px;
+}
+
+.small-font-13{
+    font-size: 13px;
 }

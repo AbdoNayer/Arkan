@@ -1,0 +1,20 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+footer{
+    .contact-info{
+        span{
+            width: 45px;
+            height: 45px;
+        }
+    }
+    .middle-footer{
+        background-color: #F3F3F3;
+    }
+    .end-footer{
+        background-color: #E8E7E7;
+        img{
+            max-width: 50px;
+        }
+    }
+}

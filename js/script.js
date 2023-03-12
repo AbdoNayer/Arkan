@@ -15,12 +15,25 @@ $(window).on('load', function () {
 
 $(document).ready(function () {
 
-    // Click Open Nav Mobile
-    $(document).on("click", ".click-nav, .overlay",function() {
+    // Click Open Nav In Mobile
+    $(document).on("click", ".click-nav, .overlay, .modal-country",function() {
         $(".handle").toggleClass("closed");
         $("nav").toggleClass("back");
-        $(".overlay").toggleClass("back");
+        $(".overlay-fixed").toggleClass("back");
         $("nav li").toggleClass("animSlideIn");
+        $("body").toggleClass("overflow-hidden");
+    });
+
+    // Click Open Search In Mobile
+    $(document).on("click", ".open-search",function() {
+        $(".form-search").toggleClass("showing");
+        $(".handle").toggleClass("closed");
+        $("nav").toggleClass("back");
+        $(".overlay-fixed").toggleClass("back");
+    });
+    // Click Open Search In Mobile
+    $(document).on("click", ".overlay-absolute",function() {
+        $(".form-search").toggleClass("showing");
         $("body").toggleClass("overflow-hidden");
     });
 
