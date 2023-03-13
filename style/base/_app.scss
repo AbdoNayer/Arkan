@@ -92,8 +92,133 @@
         &:hover{
             background-color: $mainColor;
             i{
-                color: #fff;
+                color: $whiteColor;
             }
         }
+    }
+}
+
+// View Cart
+.view-cart{
+    @include positionItem(fixed, 0, initial, initial, initial, initial);
+    @include flexItem(flex, initial, flex-end, row, initial);
+    @include transition(0.5s);
+    z-index: 999;
+    .bg-content{
+        width: 350px;
+        z-index: 999;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        will-change: scroll-position;
+        contain: size style layout;
+        .view-all-item-cart{
+            height: 400px;
+            .border-bottom{
+                &:last-child{
+                    border: 0 !important
+                }
+            }
+            .img-cart-item{
+                img{
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+        }
+    }
+}
+
+// Select Option
+.select-in{
+    &::after{
+        content:"\e924";
+        font-family:"icomoon";
+        @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+    }
+    .form-select {
+        padding: 8px;
+        background-image: initial;
+        &:focus {
+            border-color: #ced4da;
+            outline: 0;
+            box-shadow: 0 0 0 0 rgba(13,110,253,.25);
+        }
+    }
+}
+
+// Form In
+.form-in{
+    .in-val{
+        label{
+            &::after{
+                content: "*";
+                color: #f00;
+            }
+        }
+    }
+    .in-val-code{
+        input{
+            background-color: #FBFBFB;
+            border: 1px solid #CDD4D9;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+// Style ChickBox
+.chick-box {
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: auto;
+        &:checked {
+            ~ .checkmark {
+                background-color: $mainColor;
+                border: 1px solid $mainColor;
+            }
+            ~ .checkmark:after {
+                display: block;
+            }
+        }
+    }
+    .checkmark {
+        @include positionItem(relative, 0, initial, 0, initial, initial);
+        height: 20px;
+        width: 20px;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        display: inline-block;
+        vertical-align: middle;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 5px;
+            top: 1px;
+            width: 8px;
+            height: 13px;
+            border: solid $whiteColor;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
+// Modal
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 700px;
     }
 }

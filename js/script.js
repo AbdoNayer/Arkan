@@ -31,10 +31,30 @@ $(document).ready(function () {
         $("nav").toggleClass("back");
         $(".overlay-fixed").toggleClass("back");
     });
-    // Click Open Search In Mobile
+    
+    // Click Remove Class For All Section
     $(document).on("click", ".overlay-absolute",function() {
-        $(".form-search").toggleClass("showing");
+        $(".form-search").removeClass("showing");
+        $("body").removeClass("overflow-hidden");
+    });
+    
+    // Click Open Cart
+    $(document).on("click", ".open-cart, .overlay-fixed",function() {
+        $(".view-cart").toggleClass("back");
+        $(".overlay-fixed").toggleClass("back");
         $("body").toggleClass("overflow-hidden");
+    });
+
+    /// Show And Hide Password
+    $(document).on("click", ".icon-eye",function() {
+        $('.icon-eye').toggleClass("icon-eye-off");
+        if ($('.input-password').attr("type") === "password") {
+            $('.input-password').attr("type", "text");
+            console.log('vv')
+        } else {
+            $('.input-password').attr("type", "password");
+            console.log('nn')
+        }
     });
 
     // Slider Skills

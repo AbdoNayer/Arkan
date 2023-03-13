@@ -16,10 +16,27 @@ html[dir=ltr] {
         left: 0;            
     }
 
+    // View Cart
+    .view-cart{
+        transform: translateX(100%);  
+        right: 0;
+        .overlay-fixed{
+            transform: translateX(100%);  
+            right: 0;        
+        }
+    }
+
     // Count In
     .count-in{
         strong{
             right: -4px;
+        }
+    }
+
+    // Select Option
+    .select-in{
+        &::after{
+            right: 10px;
         }
     }
 
@@ -50,10 +67,27 @@ html[dir=rtl] {
         right: 0;            
     }
 
+    // View Cart
+    .view-cart{
+        transform: translateX(-100%);  
+        left: 0;
+        .overlay-fixed{
+            transform: translateX(-100%);  
+            left: 0;          
+        }
+    }
+
     // Count In
     .count-in{
         strong{
             left: -4px;
+        }
+    }
+
+    // Select Option
+    .select-in{
+        &::after{
+            left: 10px;
         }
     }
 

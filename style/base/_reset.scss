@@ -57,18 +57,39 @@ li{
 
 // Tools Form
 
-label{
-    
-}
-
 input{
     border: 1px solid $colorBorderInput;
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-radius: 2px;
+}
+
+::-webkit-input-placeholder {
+    color: $placholderInputColor;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: $placholderInputColor;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $placholderInputColor;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: $placholderInputColor;
+    opacity: 1;
 }
 
 .fix-icon-Input{
     @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 // Style Scroll Site
@@ -86,6 +107,10 @@ input{
 
 .secondColor{
     color: $secondColor !important;
+}
+
+.colorGray{
+    color : $gray !important
 }
 
 // Bg Colors
@@ -117,10 +142,11 @@ button{
 }
   
 .btn-button{
-    height: 45px;
-    width: 180px;
+    height: 40px;
+    width: 160px;
+    font-size: 14px;
     &:hover{
-      transform: scale(0.5);
+      transform: scale(0.9);
     }
 }
 
