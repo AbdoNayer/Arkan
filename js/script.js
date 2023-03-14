@@ -60,18 +60,18 @@ $(document).ready(function () {
     // Slider Skills
     $('#sliderHome').owlCarousel({
         loop:true,
-        margin:5,
-        center:false,
+        margin:0,
+        center:true,
         autoplay:true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 7000,
         smartSpeed: 1000,
         animateOut: 'fadeOut',
-        dragEndSpeed: 3000,
+        dragEndSpeed: 7000,
         pagination : false,
-        nav:true,
+        nav:false,
         navText: [
-            '<i class="icon-arrow"></i>',
-            '<i class="icon-arrow"></i>'
+            '<i class="icon-arrow-left"></i>',
+            '<i class="icon-arrow-right"></i>'
         ],
         responsive:{
             0:{

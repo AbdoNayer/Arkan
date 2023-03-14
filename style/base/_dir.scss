@@ -91,6 +91,13 @@ html[dir=rtl] {
         }
     }
 
+    // Slider Home
+    .sliderHome{
+        .overlay-fix {
+            direction: rtl;
+        }
+    }
+
     // Media
     @media (max-width: 990px) {
         // Nav

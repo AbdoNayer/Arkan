@@ -222,3 +222,99 @@
         max-width: 700px;
     }
 }
+
+// Slider Home
+#sliderHome{
+    img{
+        height: 550px;
+    }
+    .overlay-fix {
+        @include positionItem(absolute, 0, initial, 0, initial, translateX(-100%));
+        .over-info{
+            width: 420px;
+            h1{
+                line-height: 60px;
+            }
+            p{
+                color: #747474;
+            }
+        }
+    }
+    .owl-dots {
+        @include positionItem(absolute, initial, 25px, 0, initial, initial);
+        @include flexItem(flex !important, center, center, row, initial);
+        z-index: 8;
+        width: 100%;
+        .owl-dot{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $mainColor;
+            opacity: 0.5;
+            margin: 0 3px;
+            &.active{
+                opacity:1;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+    .owl-item.active{
+        h1, p, a{
+            animation-name: translateInfo;
+            animation-fill-mode: both;
+        }
+        h1{
+            animation-duration: 1s;
+            animation-delay: 1s;
+        }
+        p{
+            animation-duration: 2s;
+            animation-delay: 2s;
+        }
+        a{
+            animation-duration: 2.5s;
+            animation-delay: 2.5s;
+        }
+    }
+    @keyframes translateInfo {
+        from {
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          visibility: initial;
+          transform: translateY(0px);
+        }
+    }
+}
+
+// Over Body
+.over-body{
+    .shape-1, .shape-2{
+        @include positionItem(absolute, 0, initial, initial, initial, initial);
+        max-width: 120px;
+    }
+    .shape-1{
+        right: 0;
+        transform: scale(-1.1,1.1);
+    }
+    .shape-2{
+        left: 0;
+    }
+}
+
+// Services
+.services{
+    .it-flowers{
+        .fic-icon-img{
+            width: 100px;
+            height: 100px;
+            img{
+                max-width: 50px;
+            }
+        }
+    }
+}

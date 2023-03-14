@@ -144,6 +144,9 @@ footer .end-footer img {
   footer .end-footer .d-flex p {
     margin-top: 10px !important;
   }
+  .sliderHome .overlay-fix .over-info {
+    width: 100%;
+  }
 }
 * {
   border: 0;
@@ -261,6 +264,10 @@ select {
 
 .bgSecondColor {
   background-color: #2D2B2B !important;
+}
+
+.bgOpColorMain {
+  background-color: #fef4f3;
 }
 
 .borderColorMain {
@@ -605,6 +612,111 @@ button {
     max-width: 700px;
   }
 }
+#sliderHome img {
+  height: 550px;
+}
+#sliderHome .overlay-fix {
+  position: absolute;
+  top: 0;
+  bottom: initial;
+  right: 0;
+  left: initial;
+  transform: translateX(-100%);
+  margin: auto;
+}
+#sliderHome .overlay-fix .over-info {
+  width: 420px;
+}
+#sliderHome .overlay-fix .over-info h1 {
+  line-height: 60px;
+}
+#sliderHome .overlay-fix .over-info p {
+  color: #747474;
+}
+#sliderHome .owl-dots {
+  position: absolute;
+  top: initial;
+  bottom: 25px;
+  right: 0;
+  left: initial;
+  transform: initial;
+  margin: auto;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: initial;
+  z-index: 8;
+  width: 100%;
+}
+#sliderHome .owl-dots .owl-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #F34F3F;
+  opacity: 0.5;
+  margin: 0 3px;
+}
+#sliderHome .owl-dots .owl-dot.active {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+#sliderHome .owl-item.active h1, #sliderHome .owl-item.active p, #sliderHome .owl-item.active a {
+  animation-name: translateInfo;
+  animation-fill-mode: both;
+}
+#sliderHome .owl-item.active h1 {
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+#sliderHome .owl-item.active p {
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+#sliderHome .owl-item.active a {
+  animation-duration: 2.5s;
+  animation-delay: 2.5s;
+}
+@keyframes translateInfo {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    visibility: initial;
+    transform: translateY(0px);
+  }
+}
+
+.over-body .shape-1, .over-body .shape-2 {
+  position: absolute;
+  top: 0;
+  bottom: initial;
+  right: initial;
+  left: initial;
+  transform: initial;
+  margin: auto;
+  max-width: 120px;
+}
+.over-body .shape-1 {
+  right: 0;
+  transform: scale(-1.1, 1.1);
+}
+.over-body .shape-2 {
+  left: 0;
+}
+
+.services .it-flowers .fic-icon-img {
+  width: 100px;
+  height: 100px;
+}
+.services .it-flowers .fic-icon-img img {
+  max-width: 50px;
+}
+
 html[dir=ltr] body {
   direction: ltr;
 }
@@ -659,6 +771,9 @@ html[dir=rtl] .count-in strong {
 }
 html[dir=rtl] .select-in::after {
   left: 10px;
+}
+html[dir=rtl] .sliderHome .overlay-fix {
+  direction: rtl;
 }
 @media (max-width: 990px) {
   html[dir=rtl] nav {
