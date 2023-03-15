@@ -717,6 +717,89 @@ button {
   max-width: 50px;
 }
 
+.shape-title {
+  max-width: 120px;
+}
+
+.item-block .over-block {
+  position: absolute;
+  top: 0;
+  bottom: initial;
+  right: 0;
+  left: initial;
+  transform: initial;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+}
+.item-block .over-block button {
+  width: 40px;
+  height: 40px;
+}
+.item-block .img-item img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.item-block .mark-over {
+  position: absolute;
+  top: -5px;
+  bottom: initial;
+  right: initial;
+  left: initial;
+  transform: initial;
+  margin: auto;
+  background-image: url("../../images/mark.png");
+  height: 75px;
+  width: 46px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.item-block:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+.item-block:hover .over-block {
+  opacity: 1;
+  visibility: initial;
+}
+.item-block:hover .img-item img {
+  transform: scale(1.1);
+}
+
+.logos img {
+  width: 100%;
+  height: 90px;
+}
+
+.item-shape-block {
+  background-color: #FFCAC5;
+  width: 100%;
+  height: 260px;
+}
+.item-shape-block .img-item {
+  position: absolute;
+  top: initial;
+  bottom: 0;
+  right: 0;
+  left: initial;
+  transform: initial;
+  margin: auto;
+}
+.item-shape-block .img-item img {
+  max-width: 200px;
+}
+
 html[dir=ltr] body {
   direction: ltr;
 }
@@ -740,6 +823,9 @@ html[dir=ltr] .count-in strong {
 }
 html[dir=ltr] .select-in::after {
   right: 10px;
+}
+html[dir=ltr] .item-block .mark-over {
+  left: 10px;
 }
 @media (max-width: 990px) {
   html[dir=ltr] nav {
@@ -774,6 +860,9 @@ html[dir=rtl] .select-in::after {
 }
 html[dir=rtl] .sliderHome .overlay-fix {
   direction: rtl;
+}
+html[dir=rtl] .item-block .mark-over {
+  right: 10px;
 }
 @media (max-width: 990px) {
   html[dir=rtl] nav {

@@ -40,6 +40,13 @@ html[dir=ltr] {
         }
     }
 
+    // Item Block
+    .item-block{
+        .mark-over{
+            left: 10px;
+        }
+    }
+
     // Media
     @media (max-width: 990px) {
         // Nav
@@ -95,6 +102,13 @@ html[dir=rtl] {
     .sliderHome{
         .overlay-fix {
             direction: rtl;
+        }
+    }
+
+    // Item Block
+    .item-block{
+        .mark-over{
+            right: 10px;
         }
     }
 
