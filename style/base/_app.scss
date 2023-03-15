@@ -294,7 +294,7 @@
 // Over Body
 .over-body{
     .shape-1, .shape-2{
-        @include positionItem(absolute, 0, initial, initial, initial, initial);
+        @include positionItem(absolute, 10px, initial, initial, initial, initial);
         max-width: 120px;
     }
     .shape-1{
@@ -386,6 +386,22 @@
         @include positionItem(absolute, initial, 0, 0, initial, initial);
         img{
           max-width: 200px;  
+        }
+    }
+}
+
+// Notification
+.all-notification{
+    .block-notification{
+        > span{
+            width: 60px;
+            height: 45px;
+            display: inline-block;
+            transform: rotate(45deg);
+            background-color: #fddbd8;
+            i{
+                transform: rotate(-45deg);
+            }
         }
     }
 }

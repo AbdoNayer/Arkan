@@ -1,5 +1,15 @@
 // Font Import Cdn
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "URW-DIN";
+    src: url("../../fonts/regular.ttf");
+}
+@font-face {
+    font-family: "URW-DIN";
+    src: url("../../fonts/bold.ttf");
+    font-weight: bold;
+}
 
 // Mixin
 @import '../abstracts/mixins';
@@ -19,7 +29,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden !important;
-    font-family: 'Cairo', sans-serif !important;
+    font-family: 'URW-DIN', sans-serif !important;
 }
 
 a, button, input, textarea, i{
@@ -61,6 +71,14 @@ input{
     border: 1px solid $colorBorderInput;
     padding: 10px 20px;
     border-radius: 2px;
+}
+
+textarea{
+    border: 1px solid $colorBorderInput;
+    padding: 10px 20px;
+    border-radius: 2px;
+    min-height: 100px;
+    resize: none;
 }
 
 ::-webkit-input-placeholder {
@@ -124,7 +142,15 @@ select {
 }
 
 .bgOpColorMain{
-    background-color: #fef4f3;
+    background-color: #fef4f3 !important;
+}
+
+.bgColorGray{
+    background-color: #f3f3f3 !important;
+}
+
+.bgOpColorGray{
+    background-color: #FBFBFB !important;
 }
 
 // Border Color
