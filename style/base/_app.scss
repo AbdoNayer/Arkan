@@ -112,19 +112,20 @@
         -webkit-overflow-scrolling: touch;
         will-change: scroll-position;
         contain: size style layout;
-        .view-all-item-cart{
-            height: 400px;
-            .border-bottom{
-                &:last-child{
-                    border: 0 !important
-                }
-            }
-            .img-cart-item{
-                img{
-                    width: 75px;
-                    height: 75px;
-                }
-            }
+    }
+}
+
+.view-all-item-cart{
+    height: 400px;
+    .border-bottom{
+        &:last-child{
+            border: 0 !important
+        }
+    }
+    .img-cart-item{
+        img{
+            width: 75px;
+            height: 75px;
         }
     }
 }
@@ -219,7 +220,7 @@
 // Modal
 @media (min-width: 576px){
     .modal-dialog {
-        max-width: 700px;
+        max-width: 750px;
     }
 }
 

@@ -340,7 +340,7 @@
                     <div class="col-md-8 col-xs-12">
 
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade pt-3 mb-5" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="tab-pane pt-3 mb-5 fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="border bg-white mt-5 p-4">
 
                                     <h5 class="colorMain mb-4">بيانات الحسابات</h5>
@@ -408,7 +408,7 @@
                 
                                 </div>
                             </div>
-                            <div class="tab-pane pt-3 mb-5 fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="tab-pane pt-3 mb-5 fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
                                 <div class="border bg-white mt-5 p-4">
 
@@ -462,7 +462,78 @@
                             </div>
                             <div class="tab-pane pt-3 mb-5 fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
+                                <div class="border bg-white mt-5 p-4">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 colorMain">العناوين المحفوظة</h6>
+                                        <button class="btn-button bgColorMain text-white my-2 old-shadow" type="button" data-bs-toggle="modal" data-bs-target="#modalAddAdress">
+                                            <i class="icon-plus"></i>
+                                            <span>إضافة عنوان جديد</span>
+                                        </button>
+                                    </div>
 
+                                    <div class="border p-3 my-3">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="icon-location"></i>
+                                                <span class="mx-2 fw-bold">المنزل</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <button class="rounded-circle bgColorGray d-flex align-items-center justify-content-center mx-3 icon-circle" type="button" data-bs-toggle="modal" data-bs-target="#modalEditAdress">
+                                                    <i class="icon-editing"></i>
+                                                </button>
+                                                <button class="rounded-circle bgOpColorMain d-flex align-items-center justify-content-center icon-circle">
+                                                    <i class="icon-trash colorMain"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="d-flex align-items-center my-3">
+                                                <h6 class="m-0 small-font-13">الاسم :</h6>
+                                                <h6 class="m-0 small-font-13 mx-2">Sh3wZa Sh3wZa</h6>
+                                            </div>
+                                            <div class="d-flex align-items-center my-3">
+                                                <h6 class="m-0 small-font-13">العنوان : </h6>
+                                                <h6 class="m-0 small-font-13 mx-2">الرياض - شارع الملك فهد - مبني رقم 1 شقة </h6>
+                                            </div>
+                                            <div class="d-flex align-items-center my-3">
+                                                <h6 class="m-0 small-font-13">رقم الجوال : </h6>
+                                                <h6 class="m-0 small-font-13 mx-2">966 5453 323</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="border p-3 my-3">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="icon-location"></i>
+                                                <span class="mx-2 fw-bold">المنزل</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <button class="rounded-circle bgColorGray d-flex align-items-center justify-content-center mx-3 icon-circle" type="button" data-bs-toggle="modal" data-bs-target="#modalEditAdress">
+                                                    <i class="icon-editing"></i>
+                                                </button>
+                                                <button class="rounded-circle bgOpColorMain d-flex align-items-center justify-content-center icon-circle">
+                                                    <i class="icon-trash colorMain"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="d-flex align-items-center my-3">
+                                                <h6 class="m-0 small-font-13">الاسم :</h6>
+                                                <h6 class="m-0 small-font-13 mx-2">Sh3wZa Sh3wZa</h6>
+                                            </div>
+                                            <div class="d-flex align-items-center my-3">
+                                                <h6 class="m-0 small-font-13">العنوان : </h6>
+                                                <h6 class="m-0 small-font-13 mx-2">الرياض - شارع الملك فهد - مبني رقم 1 شقة </h6>
+                                            </div>
+                                            <div class="d-flex align-items-center my-3">
+                                                <h6 class="m-0 small-font-13">رقم الجوال : </h6>
+                                                <h6 class="m-0 small-font-13 mx-2">966 5453 323</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
 
                             </div>
                         </div>
@@ -477,11 +548,155 @@
 
     </div>
 
-    <!-- Modal Choose Country -->
+    <!-- Modal Details -->
     <div class="modal fade" id="modalDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-country-content p-4 rounded-3 bg-white">
-                
+                <h5 class="mb-4 fw-bold">تفاصيل الطلب</h5>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="view-all-item-cart px-3 height-view-scroll border">
+                            <h6 class="mb-3 fw-bold">الطلب</h6>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <div class="img-cart-item border">
+                                    <img src="./images/im-1.png" alt="">
+                                </div>
+                                <div class="info-cart-item px-3">
+                                    <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
+                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
+                                    <h6 class="m-0 mb-2 small-font-12"><span class="fw-bold">145</span> ريال</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <div class="img-cart-item border">
+                                    <img src="./images/im-1.png" alt="">
+                                </div>
+                                <div class="info-cart-item px-3">
+                                    <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
+                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
+                                    <h6 class="m-0 mb-2 small-font-12"><span class="fw-bold">145</span> ريال</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <div class="img-cart-item border">
+                                    <img src="./images/im-1.png" alt="">
+                                </div>
+                                <div class="info-cart-item px-3">
+                                    <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
+                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
+                                    <h6 class="m-0 mb-2 small-font-12"><span class="fw-bold">145</span> ريال</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="border p-3">
+                            <h6 class="mb-3 fw-bold mt-0">ملخص الطلب</h6>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h6 class="m-0 small-font-13">اجمالي الطلب</h6>
+                                <strong class="fw-light">688 ر.س</strong>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h6 class="m-0 small-font-13">ضريبة القيمة المضافة</h6>
+                                <strong class="fw-light">23 ر.س</strong>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h6 class="m-0 small-font-13">رسوم التوصيل</h6>
+                                <strong class="fw-light">33 ر.س</strong>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h6 class="m-0 small-font-13 colorMain">الخصم</h6>
+                                <strong class="fw-light colorMain">-233 ر.س</strong>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h6 class="m-0 small-font-13">مجموع الطلب</h6>
+                                <strong class="fw-light">1333 ر.س</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Add Adress -->
+    <div class="modal fade" id="modalAddAdress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-country-content p-4 rounded-3 bg-white">
+                <h5 class="mb-4 fw-bold">إضافة عنوان</h5>
+                <div class="row">
+                    <div class="col-md-7 col-xs-12">
+                        <form action="">
+                            <div class="mb-3 in-val">
+                                <div class="input-val position-relative">
+                                    <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" placeholder="اسم العنوان">
+                                </div>
+                            </div>
+                            <div class="mb-3 in-val">
+                                <div class="input-val position-relative">
+                                    <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" placeholder="اسم المستلم">
+                                </div>
+                            </div>
+                            <div class="mb-3 in-val">
+                                <div class="input-val position-relative">
+                                    <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" placeholder="تفاصيل العنوان">
+                                </div>
+                            </div>
+                            <div class="mb-3 in-val">
+                                <div class="input-val position-relative">
+                                    <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" placeholder="رقم الجوال">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end">
+                                <button class="btn-button bgColorMain text-white my-2 old-shadow">إضافه</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5 col-xs-12">
+                        <img src="./images/map.jpg" width="100%" height="270" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Edit Adress -->
+    <div class="modal fade" id="modalEditAdress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-country-content p-4 rounded-3 bg-white">
+                <h5 class="mb-4 fw-bold">إضافة عنوان</h5>
+                <div class="row">
+                    <div class="col-md-7 col-xs-12">
+                        <form action="">
+                            <div class="mb-3 in-val">
+                                <div class="input-val position-relative">
+                                    <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" value="Sh3wZa">
+                                </div>
+                            </div>
+                            <div class="mb-3 in-val">
+                                <div class="input-val position-relative">
+                                    <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" value="Prof Man">
+                                </div>
+                            </div>
+                            <div class="mb-3 in-val">
+                                <div class="input-val position-relative">
+                                    <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" value="egypt, cairo">
+                                </div>
+                            </div>
+                            <div class="mb-3 in-val">
+                                <div class="input-val position-relative">
+                                    <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" value="32423423423423">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end">
+                                <button class="btn-button bgColorMain text-white my-2 old-shadow">حفظ</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5 col-xs-12">
+                        <img src="./images/map.jpg" width="100%" height="270" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

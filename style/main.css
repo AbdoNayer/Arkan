@@ -450,6 +450,11 @@ button {
   font-size: 13px;
 }
 
+.icon-circle {
+  width: 40px;
+  height: 40px;
+}
+
 .click-nav {
   display: none;
   align-items: center;
@@ -588,13 +593,14 @@ button {
   will-change: scroll-position;
   contain: size style layout;
 }
-.view-cart .bg-content .view-all-item-cart {
+
+.view-all-item-cart {
   height: 400px;
 }
-.view-cart .bg-content .view-all-item-cart .border-bottom:last-child {
+.view-all-item-cart .border-bottom:last-child {
   border: 0 !important;
 }
-.view-cart .bg-content .view-all-item-cart .img-cart-item img {
+.view-all-item-cart .img-cart-item img {
   width: 75px;
   height: 75px;
 }
@@ -682,7 +688,7 @@ button {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 700px;
+    max-width: 750px;
   }
 }
 #sliderHome img {
