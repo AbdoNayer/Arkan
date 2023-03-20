@@ -272,7 +272,8 @@
         height: 550px;
     }
     .overlay-fix {
-        @include positionItem(absolute, 0, initial, 0, initial, translateX(-100%));
+        @include positionItem(absolute, 0, initial, 0, initial, initial);
+        background-color: rgba(255,255,255,0.2);
         .over-info{
             width: 420px;
             h1{
@@ -303,21 +304,24 @@
         }
     }
     .owl-item.active{
-        h1, p, a{
-            animation-name: translateInfo;
-            animation-fill-mode: both;
-        }
-        h1{
-            animation-duration: 1s;
-            animation-delay: 1s;
-        }
-        p{
-            animation-duration: 2s;
-            animation-delay: 2s;
-        }
-        a{
-            animation-duration: 2.5s;
-            animation-delay: 2.5s;
+        .over-info{
+            h1, p, a{
+                transition: 1s;
+                animation-name: translateInfo;
+                animation-fill-mode: both;
+            }
+            h1{
+                animation-duration: 1s;
+                animation-delay: 1s;
+            }
+            p{
+                animation-duration: 2s;
+                animation-delay: 2s;
+            }
+            a{
+                animation-duration: 2.5s;
+                animation-delay: 2.5s;
+            }
         }
     }
     @keyframes translateInfo {

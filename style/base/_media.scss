@@ -90,23 +90,59 @@
 
     // Slider Details
     .owl-sub-category{
-        img{
-            height: 100px;
-            object-fit: contain;
+        a{
+            margin: 5px;
+            img{
+                height: 80px;
+                object-fit: contain;
+            }
         }
         .owl-stage{
             width: auto !important;    
-            height: auto;
+            height: auto !important;
             overflow-y: initial;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
             .owl-item{
                 width: auto !important;
             }
         }
     }
 
+    // Filterion
+    .up-in-filter{
+        @include positionItem(fixed, 0, initial, initial, 0, initial);
+        @include transition(0.5s);
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        .section-filter {
+            @include positionItem(absolute, 50%, initial, 0, 0, translateY(-50%));
+            @include transition(0.5s);
+            background-color: $whiteColor;
+            width: 80%;
+            height: 80%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            will-change: scroll-position;
+            contain: size style layout;
+        }
+    }
+
 }
 
 @media (max-width: 767px) {
+
+    // Used
+    .w-50{
+        width: 100% !important;
+    }
+
     // Footer
     footer{
         .contact-info{
@@ -132,7 +168,9 @@
     .sliderHome{
         .overlay-fix {
             .over-info{
-                width: 100%;
+                width: 100% !important;
+                text-align: center;
+                @include flexItem(flex, center, center, column, initial);
             }
         }
     }

@@ -42,15 +42,16 @@ $(document).ready(function () {
         $(".overlay-fixed").toggleClass("back");
     });
     
-    // Click Remove Class For All Section
-    $(document).on("click", ".overlay-absolute",function() {
-        $(".form-search").removeClass("showing");
-        $("body").removeClass("overflow-hidden");
-    });
-    
     // Click Open Cart
     $(document).on("click", ".open-cart, .overlay-fixed",function() {
         $(".view-cart").toggleClass("back");
+        $(".overlay-fixed").toggleClass("back");
+        $("body").toggleClass("overflow-hidden");
+    });
+
+    // Filterion
+    $(document).on("click", ".open-filter",function() {
+        $(".up-in-filter").toggleClass("showing");
         $(".overlay-fixed").toggleClass("back");
         $("body").toggleClass("overflow-hidden");
     });
@@ -65,6 +66,13 @@ $(document).ready(function () {
             $('.input-password').attr("type", "password");
             console.log('nn')
         }
+    });
+    
+    // Click Remove Class For All Section
+    $(document).on("click", ".overlay-absolute",function() {
+        $(".form-search").removeClass("showing");
+        $(".up-in-filter").removeClass("showing");
+        $("body").removeClass("overflow-hidden");
     });
 
     // Slider Skills
@@ -111,6 +119,7 @@ $(document).ready(function () {
     $('.owl-sub-category').owlCarousel({
         items:3,
         loop:false,
+        autoplay:false,
         center:false,
         margin:0,
         URLhashListener:true,
