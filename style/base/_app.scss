@@ -217,6 +217,48 @@
     }
 }
 
+// Style RadioBox
+.radio-box {
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: auto;
+        &:checked {
+            ~ .checkmark {
+                border: 1px solid $mainColor;
+            }
+            ~ .checkmark:after {
+                display: block;
+            }
+        }
+    }
+    .checkmark {
+        border: 1px solid #ddd;
+        position: relative;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+        border-radius: 50%;
+        &:after {
+            content: "";
+            @include positionItem(absolute, 50%, initial, 50%, initial, translateY(-50%) translateX(50%));
+            display: none;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: $mainColor;
+        }
+    }
+}
+
 // Modal
 @media (min-width: 576px){
     .modal-dialog {
@@ -347,14 +389,6 @@
             @include transition(0.5s);
         }
     }
-    .mark-over{
-        @include positionItem(absolute, -5px, initial, initial, initial, initial);
-        background-image: url('../../images/mark.png');
-        height: 75px;
-        width: 46px;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
     &:hover{
         box-shadow: 0 3px 6px #00000029;
         .over-block{
@@ -367,6 +401,17 @@
             }
         }
     }
+}
+
+// Marker Offer
+.mark-over{
+    @include positionItem(absolute, -5px, initial, initial, initial, initial);
+    background-image: url('../../images/mark.png');
+    height: 75px;
+    width: 46px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9;
 }
 
 // Logos
@@ -465,6 +510,93 @@ table{
             &:nth-child(odd){
                 background-color: #f2f2f2;
             }
+        }
+    }
+}
+
+// Slider Details
+.owl-category{
+    img{
+        height: 400px;
+        object-fit: contain;
+    }
+}
+
+.owl-sub-category{
+    img{
+        height: 153px;
+        object-fit: contain;
+    }
+    .owl-stage{
+        width: auto !important;    
+        height: 522px;
+        overflow-y: auto;
+        .owl-item{
+            width: 100% !important;
+        }
+    }
+}
+
+// Page filterion
+.in-form-sea{
+    button{
+        width: 40px;
+        position: absolute;
+        top: 0;
+    }
+    input{
+        border: 1px solid #e4e4e4;
+    }
+}
+
+// Range Price
+.slider {
+    width: 100%;
+    input[type="range"] {
+        -webkit-appearance:none !important;
+        width: 100%;
+        height: 15px;
+        background: #dfdfdf;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none !important;
+            width: 20px;
+            height: 20px;
+            background: $mainColor;
+            border: 2px solid $whiteColor;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+// Image Upload
+.images-upload-block{
+    .upload-img{
+        input{
+            @include positionItem(absolute, 0, initial, 0, initial, initial);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+    .uploaded-block{
+        @include positionItem(absolute, 0, initial, 0, initial, initial);
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .close{
+            @include positionItem(absolute, 0, initial, 0, initial, initial);
+            background-color: rgb(243, 79, 63, 0.3) !important;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
         }
     }
 }

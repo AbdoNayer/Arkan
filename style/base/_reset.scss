@@ -252,7 +252,13 @@ button{
 }
 
 // Circle Icon BTN
+
 .icon-circle{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+}
+
+// Img Contain
+.img-contain{
+    object-fit: contain;
 }

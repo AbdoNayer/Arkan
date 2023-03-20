@@ -15,6 +15,16 @@ $(window).on('load', function () {
 
 $(document).ready(function () {
 
+    // // ADD IMAGE
+    $('.image-uploader').change(function (event){
+        $(this).parents('.images-upload-block').append('<div class="uploaded-block"><img src="'+ URL.createObjectURL(event.target.files[0]) +'"><button class="close"><i class="icon-trash text-white"></i></button></div>');
+    });
+    
+    // REMOVE IMAGE
+    $('.images-upload-block').on('click', '.close',function (){
+        $(this).parents('.uploaded-block').remove();
+    });
+
     // Click Open Nav In Mobile
     $(document).on("click", ".click-nav, .overlay, .modal-country",function() {
         $(".handle").toggleClass("closed");
@@ -86,5 +96,29 @@ $(document).ready(function () {
         }
     });
 
+    $('.owl-category').owlCarousel({
+        items:1,
+        loop:false,
+        center:true,
+        autoplay:false,
+        margin:0,
+        animateOut: 'fadeOut',
+        URLhashListener:true,
+        autoplayHoverPause:true,
+        startPosition: 'URLHash'
+    });
+    
+    $('.owl-sub-category').owlCarousel({
+        items:3,
+        loop:false,
+        center:false,
+        margin:0,
+        URLhashListener:true,
+        autoplayHoverPause:true,
+        startPosition: 'URLHash',
+        nav:false
+    });
+    
 });
+
 

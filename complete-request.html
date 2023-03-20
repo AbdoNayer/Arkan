@@ -277,344 +277,477 @@
     </div>
 
 
-    <div class="main-body profile">
+    <div class="main-body">
 
-        <div class="position-relative over-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12 py-5">
+                    <div class="border p-3">
+                        
+                        <h6 class="mt-0 fw-normal">عنوان الشحن</h6>
 
-            <img src="./images/shape.png" alt="" class="shape-1">
-            <img src="./images/shape.png" alt="" class="shape-2">
-
-            <div class="text-center p-4 bgColorGray">
-                <div class="w-50 m-auto">
-                    <h4 class="my-3">حسابي</h4>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a href="index.html" class="mx-2 colorGray">الرئيسية</a>
-                        -
-                        <span class="mx-2 colorMain">حسابي</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                
-                <div class="row">
-
-                    <div class="col-md-4 col-xs-12">
-
-                        <div class="section-user position-relative border my-5" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-
-                            <div class="text-center p-2 border-bottom in-user m-3">
-                                <img src="./images/bg.png" alt="" class="rounded-circle">
-                                <h5 class="colorMain my-3">sh3wZa sh3wZa</h5>
+                        <div class="borderColorMain py-2 px-3 my-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <i class="icon-location"></i>
+                                    <span class="mx-2 fw-bold">المنزل</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="d-flex align-items-center" type="button" data-bs-toggle="modal" data-bs-target="#modalAllAdress">
+                                        <span class="rounded-circle bgOpColorMain d-flex align-items-center justify-content-center mx-2 icon-circle">
+                                            <i class="icon-editing colorMain"></i>
+                                        </span>
+                                        <span class="colorMain small-font-13">تغيير العنوان</span>
+                                    </button>
+                                </div>
                             </div>
+                            <div class="">
+                                <div class="d-flex align-items-center my-2">
+                                    <h6 class="m-0 small-font-13">الاسم :</h6>
+                                    <h6 class="m-0 small-font-13 mx-2">Sh3wZa Sh3wZa</h6>
+                                </div>
+                                <div class="d-flex align-items-center my-3">
+                                    <h6 class="m-0 small-font-13">العنوان : </h6>
+                                    <h6 class="m-0 small-font-13 mx-2">الرياض - شارع الملك فهد - مبني رقم 1 شقة </h6>
+                                </div>
+                                <div class="d-flex align-items-center my-3">
+                                    <h6 class="m-0 small-font-13">رقم الجوال : </h6>
+                                    <h6 class="m-0 small-font-13 mx-2">966 5453 323</h6>
+                                </div>
+                            </div>
+                        </div>
 
-                            <ul class="nav nav-pills flex-column" id="pills-tab" role="tablist">
-                                <li class="nav-item my-1" role="presentation">
-                                  <button class="nav-link w-100 d-flex align-items-center active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                                        <span class="rounded-circle d-flex align-items-center justify-content-center"><i class="icon-user"></i></span>
-                                        <strong class="fw-light mx-3">إعدادات الحساب</strong>
-                                  </button>
+                        <div class="row py-2">
+                            <h6 class="fw-normal">طريقة الشحن</h6>
+                            <div class="col-md-4 col-xs-12">
+                                <label class="radio-box d-flex border py-3 px-2">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    <div class="d-flex flex-column mx-2 flex-fill">
+                                        <strong class="fw-light mb-1 small-font-13">شحن من خلال أركان</strong>
+                                        <strong class="fw-light mb-1 colorGray small-font-13">مده الشحن : خلال 6 أيام</strong>
+                                        <strong class="fw-light mb-1 colorGray small-font-13">تكلفة الشحن : 15 ر.س</strong>
+                                    </div>
+                                    <img class="img-contain" src="./images/or-1.png" alt="">
+                                </label>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <label class="radio-box d-flex border py-3 px-2">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    <div class="d-flex flex-column mx-2 flex-fill">
+                                        <strong class="fw-light mb-1 small-font-13">شحن من خلال أركان</strong>
+                                        <strong class="fw-light mb-1 colorGray small-font-13">مده الشحن : خلال 6 أيام</strong>
+                                        <strong class="fw-light mb-1 colorGray small-font-13">تكلفة الشحن : 15 ر.س</strong>
+                                    </div>
+                                    <img class="img-contain" src="./images/or-1.png" alt="">
+                                </label>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <label class="radio-box d-flex border py-3 px-2">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    <div class="d-flex flex-column mx-2 flex-fill">
+                                        <strong class="fw-light mb-1 small-font-13">شحن من خلال أركان</strong>
+                                        <strong class="fw-light mb-1 colorGray small-font-13">مده الشحن : خلال 6 أيام</strong>
+                                        <strong class="fw-light mb-1 colorGray small-font-13">تكلفة الشحن : 15 ر.س</strong>
+                                    </div>
+                                    <img class="img-contain" src="./images/or-1.png" alt="">
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="border p-3 my-4">
+
+                        <div class="py-2">
+                            <h6 class="mb-3 fw-normal">وسيلة الدفع</h6>
+                            <ul class="row nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item my-1 col-md-4 col-xs-12" role="presentation">
+                                    <label class="radio-box d-flex align-items-center justify-content-between border p-2" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" checked name="radio">
+                                            <span class="checkmark"></span>
+                                            <strong class="fw-light small-font-13 mx-2">شحن من خلال أركان</strong>
+                                        </div>
+                                        <span>
+                                            <i class="icon-cart-1"></i>
+                                        </span>
+                                    </label>
                                 </li>
-                                <li class="nav-item my-1" role="presentation">
-                                  <button class="nav-link w-100 d-flex align-items-center" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                                        <span class="rounded-circle d-flex align-items-center justify-content-center"><i class="icon-commercial-delivery"></i></span>
-                                        <strong class="fw-light mx-3">مشترياتي</strong>
-                                  </button>
+                                <li class="nav-item my-1 col-md-4 col-xs-12" role="presentation">
+                                    <label class="radio-box d-flex align-items-center justify-content-between border p-2" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            <strong class="fw-light small-font-13 mx-2">شحن من خلال أركان</strong>
+                                        </div>
+                                        <span>
+                                            <i class="icon-cart-3"></i>
+                                        </span>
+                                    </label>
                                 </li>
-                                <li class="nav-item my-1" role="presentation">
-                                  <button class="nav-link w-100 d-flex align-items-center" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                                        <span class="rounded-circle d-flex align-items-center justify-content-center"><i class="icon-map-in"></i></span>
-                                        <strong class="fw-light mx-3">العناوين المحفوظة</strong>
-                                  </button>
+                                <li class="nav-item my-1 col-md-4 col-xs-12" role="presentation">
+                                    <label class="radio-box d-flex align-items-center justify-content-between border p-2" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            <strong class="fw-light small-font-13 mx-2">شحن من خلال أركان</strong>
+                                        </div>
+                                        <span>
+                                            <i class="icon-cart-2"></i>
+                                        </span>
+                                    </label>
                                 </li>
                             </ul>
-
-                            <div class="py-3 text-center border-top m-3 mb-0">
-                                <a href="index.html" class="colorMain">تسجيل خروج</a>
-                            </div>
-
                         </div>
 
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane pt-3 fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="bg-white">
+
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="mb-3 in-val">
+                                                    <label class="small-font-13 mb-2">الاسم علي البطاقة</label>
+                                                    <div class="input-val position-relative">
+                                                        <input class="w-100 small-font-12 border rounded-2" type="text" placeholder="ادخل الاسم علي البطاقة">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="mb-3 in-val">
+                                                    <label class="small-font-13 mb-2">رقم البطاقة</label>
+                                                    <div class="input-val position-relative">
+                                                        <input class="w-100 small-font-12 border rounded-2" type="text" placeholder="**********">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="mb-3 in-val">
+                                                    <label class="small-font-13 mb-2">تاريخ الانتهاء</label>
+                                                    <div class="input-val position-relative">
+                                                        <input class="w-100 small-font-12 border rounded-2" type="date" placeholder="شهر / سنة">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="mb-3 in-val">
+                                                    <label class="small-font-13 mb-2">رقم CVV</label>
+                                                    <div class="input-val position-relative">
+                                                        <input class="w-100 small-font-12 border rounded-2" type="text" placeholder="*****">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn-button bgColorMain text-white my-2 old-shadow">حفظ</button>
+                                        </div>
+                                    </form>
+                
+                                </div>
+                            </div>
+                            <div class="tab-pane pt-3 fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-12">
+                                            <div class="mb-3 in-val">
+                                                <label class="small-font-13 mb-2">اختر البنك</label>
+                                                <div class="input-val position-relative">
+                                                    <input class="w-100 small-font-12 border rounded-2" type="text" placeholder="اختر البنك">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <div class="mb-3 in-val">
+                                                <label class="small-font-13 mb-2">رقم الحساب البنكي</label>
+                                                <div class="input-val position-relative">
+                                                    <input class="w-100 small-font-12 border rounded-2" type="text" placeholder="ادخل رقم الحساب البنكي">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <div class="mb-3 in-val">
+                                                <label class="small-font-13 mb-2">صورة إيصال الدفع</label>
+                                                <div class="images-upload-block position-relative">
+                                                    <label class="upload-img bgOpColorMain rounded-2 mt-2 py-5 d-flex flex-column align-items-center justify-content-between w-100">
+                                                        <input type="file" name="photos[]" id="multi_image" accept="image/*"  multiple="multiple" class="image-uploader">
+                                                        <i class="icon-camera colorMain"></i>
+                                                        <span class="small-font-13 mt-2">اضف صورة إيصال الدفع</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn-button bgColorMain text-white my-2 old-shadow">ارسال</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="tab-pane pt-3 fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+                                <p class="my-3 text-center">سوف يتم تحصيل قيمة الطلب من قبل المندوب</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 py-5">
+
+                    <div class="p-3 border">
+                        <h6 class="fw-bold">ملخص الطلب</h6>
+                        <div class="d-flex align-items-center justify-content-between my-3">
+                            <h6 class="m-0 small-font-13">اجمالي الطلب</h6>
+                            <h6 class="m-0 small-font-13">688 ر.س</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-3">
+                            <h6 class="m-0 small-font-13">ضريبة القيمة المضافة ( vat ) </h6>
+                            <h6 class="m-0 small-font-13">34 ر.س</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-3">
+                            <h6 class="m-0 small-font-13">رسوم التوصيل</h6>
+                            <h6 class="m-0 small-font-13">710 ر.س</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-3">
+                            <h6 class="m-0 small-font-13 colorMain">الخصم</h6>
+                            <h6 class="m-0 small-font-13 colorMain">-710 ر.س</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between my-3">
+                            <h6 class="m-0 small-font-13">مجموع الطلب</h6>
+                            <h6 class="m-0 small-font-13 fw-bold">710 ر.س</h6>
+                        </div>
+                        <button class="w-100 btn-button bgColorMain text-white my-3 old-shadow">إتمام الشراء</button>
+                        <h6 class="fw-bold">كود الخصم</h6>
+                        <form action="" class="position-relative">
+                            <input type="tel" placeholder="ادخل الكود" class="w-100 small-font-13 border">
+                            <button class="fix-icon-Input colorMain small-font-13">تطبيق</button>
+                        </form>
                     </div>
 
-                    <div class="col-md-8 col-xs-12 overflow-hidden">
+                    <div class="p-3 border my-4">
 
-                        <div class="tab-content" id="pills-tabContent" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-                            <div class="tab-pane pt-3 mb-5 fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="border bg-white mt-5 p-4">
+                        <h6 class="fw-bold">مراجعة الطلب</h6>
 
-                                    <h5 class="colorMain mb-4">بيانات الحسابات</h5>
-                                    <form action="">
-                                        <div class="row">
-                                            <div class="col-md-6 col-xs-12">
-                                                <div class="mb-3 in-val">
-                                                    <div class="input-val position-relative">
-                                                        <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" value="sh3wZa">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-xs-12">
-                                                <div class="mb-3 in-val">
-                                                    <div class="input-val position-relative">
-                                                        <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" value="sh3wZa">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-xs-12">
-                                                <div class="mb-3 in-val">
-                                                    <div class="input-val position-relative">
-                                                        <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" value="32434234234">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-xs-12">
-                                                <div class="mb-3 in-val">
-                                                    <div class="input-val position-relative">
-                                                        <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="text" value="sh3wZa@gmail.com">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-end">
-                                            <button class="btn-button bgColorMain text-white my-2 old-shadow">حفظ</button>
-                                        </div>
-                                    </form>
-                
+                        <div class="view-all-item-cart px-1 height-view-scroll">
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <div class="img-cart-item border">
+                                    <img src="./images/im-1.png" alt="">
                                 </div>
-                                <div class="border bg-white mt-4 p-4">
-
-                                    <h5 class="colorMain mb-4">تغيير كلمة المرور</h5>
-                                    <form action="">
-                                        <div class="row">
-                                            <div class="col-md-6 col-xs-12">
-                                                <div class="mb-3 in-val">
-                                                    <div class="input-val position-relative">
-                                                        <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="password" placeholder="كلمة المرور القديمة">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-xs-12">
-                                                <div class="mb-3 in-val">
-                                                    <div class="input-val position-relative">
-                                                        <input class="w-100 small-font-12 bgOpColorGray border rounded-2" type="password" placeholder="كلمة المرور الجديدة">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-end">
-                                            <button class="btn-button bgColorMain text-white my-2 old-shadow">حفظ</button>
-                                        </div>
-                                    </form>
-                
-                                </div>
-                            </div>
-                            <div class="tab-pane pt-3 mb-5 fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-
-                                <div class="border bg-white mt-5 p-4">
-
-                                    <h5 class="colorMain mb-4 mt-0">مشترياتي</h5>
-
-                                    <table class="table text-center">
-                                        <thead>
-                                          <tr>
-                                            <th>رقم الطلب</th>
-                                            <th>وقت الطلب</th>
-                                            <th>تاريخ الطلب</th>
-                                            <th>حالة الطلب</th>
-                                            <th>وسيلة الدفع</th>
-                                            <th>الإجمالي</th>
-                                            <th>تفاصيل الطلب</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <td>####</td>
-                                            <td>3 : 00 م</td>
-                                            <td>12/12/2023</td>
-                                            <td>في الطريق</td>
-                                            <td>الدفع عند الإستلام</td>
-                                            <td>200 ر.س</td>
-                                            <td><button type="button" data-bs-toggle="modal" data-bs-target="#modalDetails"><i class="icon-search-o fs-5"></i></button></td>
-                                          </tr>
-                                          <tr>
-                                            <td>####</td>
-                                            <td>3 : 00 م</td>
-                                            <td>12/12/2023</td>
-                                            <td>في الطريق</td>
-                                            <td>الدفع عند الإستلام</td>
-                                            <td>200 ر.س</td>
-                                            <td><button type="button" data-bs-toggle="modal" data-bs-target="#modalDetails"><i class="icon-search-o fs-5"></i></button></td>
-                                          </tr>
-                                          <tr>
-                                            <td>####</td>
-                                            <td>3 : 00 م</td>
-                                            <td>12/12/2023</td>
-                                            <td>في الطريق</td>
-                                            <td>الدفع عند الإستلام</td>
-                                            <td>200 ر.س</td>
-                                            <td><button type="button" data-bs-toggle="modal" data-bs-target="#modalDetails"><i class="icon-search-o fs-5"></i></button></td>
-                                          </tr>
-                                        </tbody>
-                                    </table>
-
-                                </div>
-
-                            </div>
-                            <div class="tab-pane pt-3 mb-5 fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-
-                                <div class="border bg-white mt-5 p-4">
+                                <div class="info-cart-item px-3 flex-fill">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <h6 class="m-0 colorMain">العناوين المحفوظة</h6>
-                                        <button class="btn-button bgColorMain text-white my-2 old-shadow" type="button" data-bs-toggle="modal" data-bs-target="#modalAddAdress">
-                                            <i class="icon-plus"></i>
-                                            <span>إضافة عنوان جديد</span>
+                                        <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
+                                        <div class="d-flex align-items-center">
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-plus small-font-12"></i></button>
+                                            <span class="mx-3 colorMain small-font-12">3</span>
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-minus small-font-12"></i></button>
+                                        </div>
+                                    </div>
+                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 small-font-12"><span class="fw-bold">145</span> ريال</h6>
+                                        <button class="icon-circle rounded-circle bgOpColorMain d-flex align-items-center justify-content-center">
+                                            <i class="icon-trash colorMain small-font-13"></i>
                                         </button>
                                     </div>
-
-                                    <div class="border p-3 my-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i class="icon-location"></i>
-                                                <span class="mx-2 fw-bold">المنزل</span>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <button class="rounded-circle bgColorGray d-flex align-items-center justify-content-center mx-3 icon-circle" type="button" data-bs-toggle="modal" data-bs-target="#modalEditAdress">
-                                                    <i class="icon-editing"></i>
-                                                </button>
-                                                <button class="rounded-circle bgOpColorMain d-flex align-items-center justify-content-center icon-circle">
-                                                    <i class="icon-trash colorMain"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <div class="d-flex align-items-center my-3">
-                                                <h6 class="m-0 small-font-13">الاسم :</h6>
-                                                <h6 class="m-0 small-font-13 mx-2">Sh3wZa Sh3wZa</h6>
-                                            </div>
-                                            <div class="d-flex align-items-center my-3">
-                                                <h6 class="m-0 small-font-13">العنوان : </h6>
-                                                <h6 class="m-0 small-font-13 mx-2">الرياض - شارع الملك فهد - مبني رقم 1 شقة </h6>
-                                            </div>
-                                            <div class="d-flex align-items-center my-3">
-                                                <h6 class="m-0 small-font-13">رقم الجوال : </h6>
-                                                <h6 class="m-0 small-font-13 mx-2">966 5453 323</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="border p-3 my-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <i class="icon-location"></i>
-                                                <span class="mx-2 fw-bold">المنزل</span>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <button class="rounded-circle bgColorGray d-flex align-items-center justify-content-center mx-3 icon-circle" type="button" data-bs-toggle="modal" data-bs-target="#modalEditAdress">
-                                                    <i class="icon-editing"></i>
-                                                </button>
-                                                <button class="rounded-circle bgOpColorMain d-flex align-items-center justify-content-center icon-circle">
-                                                    <i class="icon-trash colorMain"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <div class="d-flex align-items-center my-3">
-                                                <h6 class="m-0 small-font-13">الاسم :</h6>
-                                                <h6 class="m-0 small-font-13 mx-2">Sh3wZa Sh3wZa</h6>
-                                            </div>
-                                            <div class="d-flex align-items-center my-3">
-                                                <h6 class="m-0 small-font-13">العنوان : </h6>
-                                                <h6 class="m-0 small-font-13 mx-2">الرياض - شارع الملك فهد - مبني رقم 1 شقة </h6>
-                                            </div>
-                                            <div class="d-flex align-items-center my-3">
-                                                <h6 class="m-0 small-font-13">رقم الجوال : </h6>
-                                                <h6 class="m-0 small-font-13 mx-2">966 5453 323</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
-
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <div class="img-cart-item border">
+                                    <img src="./images/im-1.png" alt="">
+                                </div>
+                                <div class="info-cart-item px-3 flex-fill">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
+                                        <div class="d-flex align-items-center">
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-plus small-font-12"></i></button>
+                                            <span class="mx-3 colorMain small-font-12">3</span>
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-minus small-font-12"></i></button>
+                                        </div>
+                                    </div>
+                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 small-font-12"><span class="fw-bold">145</span> ريال</h6>
+                                        <button class="icon-circle rounded-circle bgOpColorMain d-flex align-items-center justify-content-center">
+                                            <i class="icon-trash colorMain small-font-13"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <div class="img-cart-item border">
+                                    <img src="./images/im-1.png" alt="">
+                                </div>
+                                <div class="info-cart-item px-3 flex-fill">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
+                                        <div class="d-flex align-items-center">
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-plus small-font-12"></i></button>
+                                            <span class="mx-3 colorMain small-font-12">3</span>
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-minus small-font-12"></i></button>
+                                        </div>
+                                    </div>
+                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 small-font-12"><span class="fw-bold">145</span> ريال</h6>
+                                        <button class="icon-circle rounded-circle bgOpColorMain d-flex align-items-center justify-content-center">
+                                            <i class="icon-trash colorMain small-font-13"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <div class="img-cart-item border">
+                                    <img src="./images/im-1.png" alt="">
+                                </div>
+                                <div class="info-cart-item px-3 flex-fill">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
+                                        <div class="d-flex align-items-center">
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-plus small-font-12"></i></button>
+                                            <span class="mx-3 colorMain small-font-12">3</span>
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-minus small-font-12"></i></button>
+                                        </div>
+                                    </div>
+                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 small-font-12"><span class="fw-bold">145</span> ريال</h6>
+                                        <button class="icon-circle rounded-circle bgOpColorMain d-flex align-items-center justify-content-center">
+                                            <i class="icon-trash colorMain small-font-13"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <div class="img-cart-item border">
+                                    <img src="./images/im-1.png" alt="">
+                                </div>
+                                <div class="info-cart-item px-3 flex-fill">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
+                                        <div class="d-flex align-items-center">
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-plus small-font-12"></i></button>
+                                            <span class="mx-3 colorMain small-font-12">3</span>
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-minus small-font-12"></i></button>
+                                        </div>
+                                    </div>
+                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 small-font-12"><span class="fw-bold">145</span> ريال</h6>
+                                        <button class="icon-circle rounded-circle bgOpColorMain d-flex align-items-center justify-content-center">
+                                            <i class="icon-trash colorMain small-font-13"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <div class="img-cart-item border">
+                                    <img src="./images/im-1.png" alt="">
+                                </div>
+                                <div class="info-cart-item px-3 flex-fill">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
+                                        <div class="d-flex align-items-center">
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-plus small-font-12"></i></button>
+                                            <span class="mx-3 colorMain small-font-12">3</span>
+                                            <button class="colorGray d-flex align-items-center justify-content-center"><i class="icon-minus small-font-12"></i></button>
+                                        </div>
+                                    </div>
+                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0 small-font-12"><span class="fw-bold">145</span> ريال</h6>
+                                        <button class="icon-circle rounded-circle bgOpColorMain d-flex align-items-center justify-content-center">
+                                            <i class="icon-trash colorMain small-font-13"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
 
                 </div>
-
             </div>
-
         </div>
 
     </div>
 
-    <!-- Modal Details -->
-    <div class="modal fade" id="modalDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <!-- Modal All Adress -->
+    <div class="modal fade" id="modalAllAdress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-country-content p-4 rounded-3 bg-white">
-                <h5 class="mb-4 fw-bold">تفاصيل الطلب</h5>
-                <div class="row">
-                    <div class="col-md-6 col-xs-12">
-                        <div class="view-all-item-cart px-3 height-view-scroll border">
-                            <h6 class="mb-3 fw-bold">الطلب</h6>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <div class="img-cart-item border">
-                                    <img src="./images/im-1.png" alt="">
-                                </div>
-                                <div class="info-cart-item px-3">
-                                    <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
-                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
-                                    <h6 class="m-0 mb-2 small-font-12"><span class="fw-bold">145</span> ريال</h6>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <div class="img-cart-item border">
-                                    <img src="./images/im-1.png" alt="">
-                                </div>
-                                <div class="info-cart-item px-3">
-                                    <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
-                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
-                                    <h6 class="m-0 mb-2 small-font-12"><span class="fw-bold">145</span> ريال</h6>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <div class="img-cart-item border">
-                                    <img src="./images/im-1.png" alt="">
-                                </div>
-                                <div class="info-cart-item px-3">
-                                    <h6 class="m-0 mb-2 small-font-12 colorMain">بوكيه ورد متنوع</h6>
-                                    <h6 class="m-0 mb-2 small-font-12">الكمية : 2</h6>
-                                    <h6 class="m-0 mb-2 small-font-12"><span class="fw-bold">145</span> ريال</h6>
-                                </div>
-                            </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="mb-4 fw-bold">العناوين المحفوظة</h5>
+                    <button class="bgColorMain py-2 px-4 d-flex align-items-center justify-content-center rounded-1 old-shadow" data-toggle="modal" data-bs-target="#modalAddAdress" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        <i class="icon-plus text-white"></i>
+                        <span class="text-white small-font-13">إضافة عنوان جديد</span>
+                    </button>
+                </div>
+
+                <div class="border px-3 py-2 my-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <i class="icon-location"></i>
+                            <span class="mx-2 fw-bold">المنزل</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <button class="rounded-circle bgColorGray d-flex align-items-center justify-content-center mx-3 icon-circle" data-toggle="modal" data-bs-target="#modalEditAdress" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                <i class="icon-editing"></i>
+                            </button>
+                            <button class="rounded-circle bgOpColorMain d-flex align-items-center justify-content-center icon-circle">
+                                <i class="icon-trash colorMain"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="border p-3">
-                            <h6 class="mb-3 fw-bold mt-0">ملخص الطلب</h6>
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <h6 class="m-0 small-font-13">اجمالي الطلب</h6>
-                                <strong class="fw-light">688 ر.س</strong>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <h6 class="m-0 small-font-13">ضريبة القيمة المضافة</h6>
-                                <strong class="fw-light">23 ر.س</strong>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <h6 class="m-0 small-font-13">رسوم التوصيل</h6>
-                                <strong class="fw-light">33 ر.س</strong>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <h6 class="m-0 small-font-13 colorMain">الخصم</h6>
-                                <strong class="fw-light colorMain">-233 ر.س</strong>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <h6 class="m-0 small-font-13">مجموع الطلب</h6>
-                                <strong class="fw-light">1333 ر.س</strong>
-                            </div>
+                    <div class="">
+                        <div class="d-flex align-items-center my-2">
+                            <h6 class="m-0 small-font-13">الاسم :</h6>
+                            <h6 class="m-0 small-font-13 mx-2">Sh3wZa Sh3wZa</h6>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                            <h6 class="m-0 small-font-13">العنوان : </h6>
+                            <h6 class="m-0 small-font-13 mx-2">الرياض - شارع الملك فهد - مبني رقم 1 شقة </h6>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                            <h6 class="m-0 small-font-13">رقم الجوال : </h6>
+                            <h6 class="m-0 small-font-13 mx-2">966 5453 323</h6>
                         </div>
                     </div>
                 </div>
+                <div class="border px-3 py-2 my-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <i class="icon-location"></i>
+                            <span class="mx-2 fw-bold">المنزل</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <button class="rounded-circle bgColorGray d-flex align-items-center justify-content-center mx-3 icon-circle" data-toggle="modal" data-bs-target="#modalEditAdress" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                <i class="icon-editing"></i>
+                            </button>
+                            <button class="rounded-circle bgOpColorMain d-flex align-items-center justify-content-center icon-circle">
+                                <i class="icon-trash colorMain"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="d-flex align-items-center my-2">
+                            <h6 class="m-0 small-font-13">الاسم :</h6>
+                            <h6 class="m-0 small-font-13 mx-2">Sh3wZa Sh3wZa</h6>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                            <h6 class="m-0 small-font-13">العنوان : </h6>
+                            <h6 class="m-0 small-font-13 mx-2">الرياض - شارع الملك فهد - مبني رقم 1 شقة </h6>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                            <h6 class="m-0 small-font-13">رقم الجوال : </h6>
+                            <h6 class="m-0 small-font-13 mx-2">966 5453 323</h6>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

@@ -40,10 +40,15 @@ html[dir=ltr] {
         }
     }
 
-    // Item Block
-    .item-block{
-        .mark-over{
-            left: 10px;
+    // Marker Offer
+    .mark-over{
+        left: 10px;
+    }
+
+    // Page filterion
+    .in-form-sea{
+        button{
+            right: 0;
         }
     }
 
@@ -105,10 +110,15 @@ html[dir=rtl] {
         }
     }
 
-    // Item Block
-    .item-block{
-        .mark-over{
-            right: 10px;
+    // Marker Offer
+    .mark-over{
+        right: 10px;
+    }
+
+    // Page filterion
+    .in-form-sea{
+        button{
+            left: 0;
         }
     }
 

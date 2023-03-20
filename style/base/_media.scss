@@ -75,6 +75,35 @@
         }
     }
 
+    // Logos
+    .logos, .services .d-flex{
+        flex-wrap: wrap;
+    }
+
+    // count Pay In Details
+    .count-pay{
+        flex-direction: column;
+        .border{
+            width: 100% !important;
+        }
+    }
+
+    // Slider Details
+    .owl-sub-category{
+        img{
+            height: 100px;
+            object-fit: contain;
+        }
+        .owl-stage{
+            width: auto !important;    
+            height: auto;
+            overflow-y: initial;
+            .owl-item{
+                width: auto !important;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 767px) {
