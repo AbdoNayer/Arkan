@@ -8,15 +8,15 @@ $(window).on('load', function () {
     });
     $("body").css("overflow-y", "auto");
 
-});
-
-$(document).ready(function () {
-
     // Animation Page
     AOS.init({
         startEvent: 'load',
       });
     AOS.refresh();
+
+});
+
+$(document).ready(function () {
 
     // // ADD IMAGE
     $('.image-uploader').change(function (event){
