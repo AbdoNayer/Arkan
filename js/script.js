@@ -8,12 +8,6 @@ $(window).on('load', function () {
     });
     $("body").css("overflow-y", "auto");
 
-    // Animation Page
-    AOS.init({
-        startEvent: 'load',
-      });
-    AOS.refresh();
-
 });
 
 $(document).ready(function () {
@@ -130,6 +124,9 @@ $(document).ready(function () {
         startPosition: 'URLHash',
         nav:false
     });
+
+    // Animation Page
+    AOS.init();
     
 });
 

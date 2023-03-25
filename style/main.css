@@ -808,7 +808,7 @@ button {
   left: initial;
   transform: initial;
   margin: auto;
-  background-image: url("../../images/mark.png");
+  background-image: url("../images/mark.png");
   height: 75px;
   width: 46px;
   background-repeat: no-repeat;
