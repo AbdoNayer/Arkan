@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "URW-DIN";
+  src: url("../fonts/regular.ttf");
+}
+@font-face {
+  font-family: "URW-DIN";
+  src: url("../fonts/bold.ttf");
+  font-weight: bold;
+}
 .loader {
   position: fixed;
   top: 0;
@@ -102,16 +111,6 @@ footer .end-footer {
 }
 footer .end-footer img {
   max-width: 50px;
-}
-
-@font-face {
-  font-family: "URW-DIN";
-  src: url("../../fonts/regular.ttf");
-}
-@font-face {
-  font-family: "URW-DIN";
-  src: url("../../fonts/bold.ttf");
-  font-weight: bold;
 }
 * {
   border: 0;
