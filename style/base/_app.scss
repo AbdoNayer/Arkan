@@ -385,6 +385,10 @@
             height: 40px;
         }
     }
+    button{
+        position: relative;
+        z-index: 10;
+    }
     .img-item{
         img{
             width: 100%;
@@ -523,6 +527,13 @@ table{
     img{
         height: 400px;
         object-fit: contain;
+    }
+}
+
+.box-count{
+    input{
+        display: inline-block;
+        width: 25px;
     }
 }
 
